@@ -5,9 +5,10 @@
 	/* widget controller */
 	var c = this;
 	
-	notesPos = 0;
+	c.notePos = 0;
 	
 	c.selectItem = function(idx) {
+		c.notePos = idx;
 		var id = c.data.notes[idx].sys_id;
 		console.log('Note ID: ' + id);
 		$rootScope.noteID = id;
@@ -59,14 +60,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-12-09 23:02:43</sys_created_on>
         <sys_id>8d29ee33dbf60300849f5c00cf96194b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Notes List</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
         <sys_update_name>sp_widget_8d29ee33dbf60300849f5c00cf96194b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-10 04:42:36</sys_updated_on>
+        <sys_updated_on>2017-12-10 04:58:59</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-heading clearfix">
     <h3 class="panel-title pull-left">
